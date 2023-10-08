@@ -563,7 +563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 62058840}
-  - component: {fileID: 62058839}
+  - component: {fileID: 62058841}
   m_Layer: 0
   m_Name: CameraSwitcher
   m_TagString: Untagged
@@ -571,18 +571,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &62058839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62058838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc6bf91c4524e1b47836a8ddb067e649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &62058840
 Transform:
   m_ObjectHideFlags: 0
@@ -598,6 +586,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62058841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62058838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6bf91c4524e1b47836a8ddb067e649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topDownCamera: {fileID: 1955709489}
+  camera2: {fileID: 1626449450}
+  camera3: {fileID: 300447309}
+  menuCamera: {fileID: 1438392087}
+  menuCanvas: {fileID: 2136845523}
 --- !u!1 &62993054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 1605283017715a3408dff708db2923d0, type: 3}
@@ -3186,6 +3191,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!20 &300447309 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 440475571988060006, guid: 0c74bed2ad49fad4d94fca86441ad49f, type: 3}
+  m_PrefabInstance: {fileID: 1255571103}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &301436740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12184,6 +12194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e015efce2556542867b9bb787e55fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wanderRadius: 5
+  minWanderTimer: 2
+  maxWanderTimer: 6
+  walkAnimation: {fileID: 0}
 --- !u!195 &1185948877
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15794,7 +15808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d63875f5c36d846b9bb8140182e5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObject: {fileID: 0}
+  playerObject: {fileID: 1185948873}
 --- !u!4 &1594686175
 Transform:
   m_ObjectHideFlags: 0
@@ -15992,6 +16006,11 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0.001, y: 0.57600003, z: 0.014}
   m_TimeToStationary: 0.5
+--- !u!20 &1626449450 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6991761595406536910, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+  m_PrefabInstance: {fileID: 1791711133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1627016461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17648,7 +17667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 477772, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 477772, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18761,6 +18780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308ae8df7a386c24ea23d7366ab03922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 2136845523}
 --- !u!4 &1886316242
 Transform:
   m_ObjectHideFlags: 0
@@ -20087,6 +20107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc09e7afbe651847b2c33f1082cf6f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseSensibility: 4
+  moveSpeed: 5
+  rotationSpeed: 2
+  riseSpeed: 5
+  descendSpeed: 5
+  maxY: -65
+  minY: 50
 --- !u!1001 &1959752079
 PrefabInstance:
   m_ObjectHideFlags: 0
