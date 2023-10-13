@@ -11,7 +11,7 @@ public class PlayerWander : MonoBehaviour
     public float wanderRadius = 5f;
     public float minWanderTimer = 2f;
     public float maxWanderTimer = 6f;
-    public AnimationClip walkAnimation; // Assign your walk animation clip here
+    public AnimationClip walkAnimation;
 
     private void Start()
     {

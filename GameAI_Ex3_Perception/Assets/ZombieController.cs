@@ -70,7 +70,7 @@ public class ZombieController : MonoBehaviour
         Vector3 screenPoint = zombieCamera.WorldToViewportPoint(player.position);
 
         // Check if the player is within the camera's frustum.
-        if (screenPoint.x >= 0 && screenPoint.x <= 1 && screenPoint.y >= 0 && screenPoint.y <= 1 && screenPoint.z > 0)
+        if (screenPoint.x >= 0 && screenPoint.x <= 0.45 && screenPoint.y >= 0 && screenPoint.y <= 1 && screenPoint.z > 0)
         {
             return true;
         }

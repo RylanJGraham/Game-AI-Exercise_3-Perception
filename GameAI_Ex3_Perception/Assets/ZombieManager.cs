@@ -4,7 +4,7 @@ using UnityEngine;
 public class ZombieManager : MonoBehaviour
 {
     private List<ZombieController> zombies = new List<ZombieController>();
-    private bool playerDetected = false;
+    public bool playerDetected = false;
 
     // Assign the player GameObject in the Inspector.
     public GameObject playerObject;
