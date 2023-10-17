@@ -13132,6 +13132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d617c5e8fc2b18744aeb2a4f16ae7e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombieManager: {fileID: 1594686174}
   wanderRadius: 10
   minWanderInterval: 2
   maxWanderInterval: 8
@@ -16015,6 +16016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d617c5e8fc2b18744aeb2a4f16ae7e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombieManager: {fileID: 1594686174}
   wanderRadius: 10
   minWanderInterval: 2
   maxWanderInterval: 8
@@ -17337,6 +17339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d617c5e8fc2b18744aeb2a4f16ae7e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombieManager: {fileID: 1594686174}
   wanderRadius: 10
   minWanderInterval: 2
   maxWanderInterval: 8

@@ -25,6 +25,7 @@ public class ZombieManager : MonoBehaviour
                 if (zombie.CanSeePlayer())
                 {
                     playerDetected = true;
+                    PlayerDetected();
                     NotifyAllZombies();
                     break;
                 }
@@ -38,6 +39,16 @@ public class ZombieManager : MonoBehaviour
         foreach (var zombie in zombies)
         {
             zombie.StartChasing(playerObject.transform);
+        }
+    }
+
+    public void PlayerDetected()
+    {
+
+        ZombieController[] zombies = FindObjectsOfType<ZombieController>();
+        foreach (ZombieController zombie in zombies)
+        {
+            zombie.SendMessage("OnPlayerDetected", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

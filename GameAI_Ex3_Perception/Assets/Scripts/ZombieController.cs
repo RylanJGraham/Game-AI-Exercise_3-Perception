@@ -7,6 +7,7 @@ public class ZombieController : MonoBehaviour
     private Transform player;
     private bool isChasing = false;
     private Camera zombieCamera;
+    public ZombieManager zombieManager;
 
     public float wanderRadius = 10f;
     public float minWanderInterval = 3f;
@@ -75,6 +76,8 @@ public class ZombieController : MonoBehaviour
             return true;
         }
 
+        zombieManager.PlayerDetected();
+
         return false;
     }
 
@@ -93,5 +96,6 @@ public class ZombieController : MonoBehaviour
     {
         isChasing = true;
         player = target;
+        Debug.Log("Player detected!");
     }
 }
