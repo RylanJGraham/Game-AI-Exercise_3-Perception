@@ -13065,7 +13065,7 @@ MonoBehaviour:
   wanderRadius: 10
   minWanderTimer: 2
   maxWanderTimer: 8
-  walkAnimation: {fileID: 0}
+  walkAnimation: {fileID: 7400000, guid: ba9f2b18e3cdfa341b6260f4bb7264e9, type: 3}
 --- !u!195 &1185948877
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15247,7 +15247,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438392084}
   m_LocalRotation: {x: 2.563576e-10, y: -0.707107, z: 0.7071066, w: -0.000000022351742}
-  m_LocalPosition: {x: 0, y: 0, z: 24.5}
+  m_LocalPosition: {x: 0, y: 0, z: 24.500011}
   m_LocalScale: {x: 0.2753906, y: 0.23995, z: 0.23995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15256,7 +15256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.55, y: 118.2}
+  m_AnchoredPosition: {x: 2.5499995, y: 136.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!81 &1438392086
@@ -18835,6 +18835,30 @@ PrefabInstance:
     - target: {fileID: 9539400, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640225221985016093, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640225221985016093, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640225221985016093, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 1640225221985016093, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037926208087797330, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037926208087797330, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}
+      propertyPath: m_Range
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c119a327e0fdf4f4890b2d98da9e2914, type: 3}

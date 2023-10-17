@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class PlayerWander : MonoBehaviour
 {
+
     private NavMeshAgent agent;
     private Animator animator;
     private Vector3 randomDestination;
@@ -64,4 +65,5 @@ public class PlayerWander : MonoBehaviour
         // Stop walking animation
         animator.SetBool("IsWalking", false);
     }
+    
 }
